@@ -1,0 +1,673 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@font-face {
+  font-family: "Bebas";
+  font-display: swap;
+  src: url("../fonts/Bebas-Regular.woff2") format(woff) url("../fonts/Bebas-Regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "";
+  font-display: swap;
+  src: url("../fonts/bebas/Bebas-Regular.woff2") format(woff) url("../fonts/bebas/Bebas-Regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Bebas";
+  font-display: swap;
+  src: url("../fonts/bebas/Bebas-Regular.woff2") format(woff) url("../fonts/bebas/Bebas-Regular.woff2") format("woff2");
+}
+
+li {
+  list-style: none;
+}
+
+.wrapper {
+  width: 100%;
+  min-height: 100%;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container1 {
+  max-width: 945px;
+  margin: 0 auto;
+}
+
+@media (max-width: 957px) {
+  .container1 {
+    max-width: 970px;
+  }
+}
+
+@media (max-width: 992px) {
+  .container1 {
+    max-width: 750px;
+  }
+}
+
+@media (max-width: 768.98px) {
+  .container1 {
+    max-width: none;
+    padding: 0 10px;
+  }
+}
+
+.container2 {
+  width: 945px;
+}
+
+.header__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header__logo {
+  font-family: "Bebas neue";
+  font-size: 36px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: #e8603c;
+}
+
+.header__logo span {
+  color: #f3af9d;
+}
+
+.slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.slider__right {
+  width: 225px;
+  height: 70px;
+  background: #f2ae9c;
+  margin-right: 20px;
+  display: none;
+}
+
+.slider__left {
+  width: 225px;
+  height: 70px;
+  background: #f2ae9c;
+  margin-left: 20px;
+  display: none;
+}
+
+.slider__container {
+  max-width: 950px;
+  padding: 20px;
+}
+
+.slider__text {
+  position: absolute;
+  max-width: 420px;
+  bottom: 30px;
+  margin-left: 30px;
+  background: #c05e36;
+  opacity: 0.8;
+  padding: 20px 20px 20px 20px;
+}
+
+@media (max-width: 766px) {
+  .slider__text {
+    display: none;
+  }
+}
+
+.slider__title {
+  font-family: "Bebas";
+  font-size: 18px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.slider__subtitle {
+  font-family: "Helvetica Neue";
+  font-size: 12px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.info__title {
+  font-family: "Bebas Neue";
+  font-size: 28px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #e8663c;
+}
+
+.info__subtitle {
+  font-family: "Helvetica Neue";
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #414141;
+}
+
+@media (max-width: 768.98px) {
+  .info__block {
+    text-align: center;
+  }
+}
+
+.info__image img {
+  width: 100%;
+}
+
+@media (max-width: 570px) {
+  .info__image {
+    padding: 50px;
+  }
+}
+
+.works__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.works__logo {
+  font-family: "Bebas Neue";
+  font-size: 18px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: #e8603c;
+}
+
+.works__title {
+  font-family: "Bebas Neue";
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #b9b9b9;
+}
+
+.works__subtitle {
+  font-family: "Bebas Neue";
+  font-size: 11px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #e8663c;
+}
+
+.works__card {
+  border: 1px solid #dbdbdb;
+}
+
+.footer__container {
+  background: #e8663c;
+  padding: 30px;
+}
+
+.footer__title {
+  font-family: "Bebas neue";
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.footer__subtitle {
+  font-family: "Helvetica Neue";
+  font-size: 12px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.footer__text {
+  font-family: "Helvetica Neue";
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: 300;
+  color: #f3b29d;
+}
+
+.footer__text span {
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.about {
+  font-family: "Helvetica Neue";
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #414141;
+}
+
+.about__image {
+  max-width: 100%;
+  min-width: 225px;
+  margin: 0 auto;
+}
+
+.about__part1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media (max-width: 768.98px) {
+  .about__part1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+.about__sidebar-image {
+  width: 50px;
+  height: 50px;
+  background-color: #f3af9d;
+  border: 1px solid #e8603c;
+}
+
+.about__sidebar-title {
+  font-family: "Bebas neue";
+  font-size: 14px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: #e8603c;
+}
+
+.about__sidebar-subtitle {
+  font-family: "Helvetica Neue";
+  font-size: 12px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: #464646;
+  max-width: 240px;
+}
+
+.about__sidebar-li {
+  font-family: "Helvetica Neue";
+  font-size: 12px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: #464646;
+}
+
+.about__label span {
+  font-family: "Helvetica Neue";
+  font-size: 36px;
+  line-height: 18px;
+  font-weight: 700;
+  color: #e8603c;
+}
+
+.about__rectangle {
+  width: 0px;
+  height: 79px;
+  background-color: #e8663c;
+  padding-left: 10px;
+}
+
+.about__fact {
+  font-family: "Helvetica Neue";
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 300;
+  font-style: italic;
+  color: #414141;
+}
+
+.about__sidebar-galery {
+  max-width: 220px;
+}
+
+.about__green {
+  max-width: 672px;
+  height: 62px;
+  background-color: #effeb9;
+  border: 1px solid #98c601;
+  font-family: "Helvetica Neue";
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  font-style: italic;
+  color: #98c601;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about__red {
+  max-width: 672px;
+  height: 62px;
+  background-color: #fbcbc1;
+  border: 1px solid #98c601;
+  font-family: "Helvetica Neue";
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  font-style: italic;
+  color: #eb5439;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about__warning {
+  max-width: 672px;
+  height: 62px;
+  background-color: #ffe9ad;
+  border: 1px solid #98c601;
+  font-family: "Helvetica Neue";
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  font-style: italic;
+  color: #fab418;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about__blue {
+  max-width: 672px;
+  height: 62px;
+  background-color: #d1e4f3;
+  border: 1px solid #98c601;
+  font-family: "Helvetica Neue";
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  font-style: italic;
+  color: #4d8fcb;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about__top {
+  background: #e8603c;
+  padding: 20px 0;
+}
+
+.about-top__logo {
+  font-family: "Bebas neue";
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.blog__block-title {
+  font-family: "Bebas neue";
+  font-size: 24px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #e8603c;
+}
+
+.blog__block-subtitle {
+  font-family: "Helvetica Neue";
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #414141;
+}
+
+.blog__block-date {
+  font-family: "Helvetica Neue";
+  color: #bababa;
+}
+
+.blog__block-date span {
+  font-family: Bebas;
+  font-size: 12px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #e8603c;
+}
+
+.blog__block-text {
+  background: url("../img/line_300.png") bottom no-repeat;
+}
+
+.blog__block-image img {
+  width: 100%;
+}
+
+.blog__block-video {
+  max-width: 970px;
+  max-height: 400px;
+}
+
+@media (max-width: 768.98px) {
+  .blog__block-video {
+    max-height: 300px;
+  }
+}
+
+@media (max-width: 768.98px) {
+  .blog__block-video {
+    max-height: 100px;
+    margin: 0 auto;
+  }
+}
+
+.blog__block-comment {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #f5f5f5;
+}
+
+.blog__block-dots {
+  font-family: Georgia;
+  font-size: 72px;
+  font-weight: 400;
+  color: #e8663c;
+}
+
+.blog__comment-title {
+  font-family: "Helvetica Neue";
+  font-size: 13px;
+  font-weight: 400;
+  font-style: italic;
+  color: #474747;
+}
+
+.blog__block-comments {
+  background: url("../img/line_300.png") bottom no-repeat;
+}
+
+.blog__title {
+  font-family: "Bebas neue";
+  font-size: 18px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: #e8663c;
+}
+
+.blog__subtitle {
+  font-family: "Helvetica Neue";
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #414141;
+  background: url("../img/line_300.png") bottom no-repeat;
+}
+
+.blog__label {
+  font-family: "Helvetica Neue";
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #a0a0a0;
+}
+
+.portfolio__items li {
+  padding-left: 0;
+  margin-right: 20px;
+  font-family: "Bebas neue";
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #b9b9b9;
+}
+
+.portfolio__filter.active {
+  width: 50px;
+  height: 31px;
+  background-color: #e8663c;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+}
+
+.portfolio__filter {
+  cursor: pointer;
+}
+
+.contact__title {
+  font-family: "Helvetica Neue";
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: 400;
+  color: #414141;
+  max-width: 300px;
+}
+
+.contact__subtitle {
+  font-size: 12px;
+  font-weight: 500;
+  color: #414141;
+}
+
+.contact__subtitle span {
+  font-family: "Helvetica Neue";
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: 700;
+  color: #e8603c;
+}
+
+.contact__text {
+  font-family: "Helvetica Neue";
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: 400;
+  color: #414141;
+}
+
+.contact__text span {
+  font-weight: 700;
+}
+
+.contact__image img {
+  width: 100%;
+}
+
+.last__name {
+  background-color: #ffffff;
+  border: 1px solid #e8663c;
+}
+
+.first__name {
+  background-color: #ffffff;
+  border: 1px solid #e8663c;
+}
+
+.email__address {
+  background-color: #ffffff;
+  border: 1px solid #e8663c;
+}
+
+.text {
+  background-color: #ffffff;
+  border: 1px solid #e8663c;
+  width: 465px;
+  height: 205px;
+}
+
+@media (max-width: 485.98px) {
+  .text {
+    width: 200px;
+  }
+}
+
+.item__text {
+  font-family: "Helvetica Neue";
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #414141;
+}
+
+.item__line {
+  background: url("../img/line_300.png") right no-repeat;
+  font-family: "Bebas neue";
+  font-size: 18px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: #e8603c;
+}
+
+.item__image img {
+  width: 100%;
+}
+/*# sourceMappingURL=style.css.map */
